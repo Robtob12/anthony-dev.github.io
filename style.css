@@ -1,0 +1,501 @@
+/*import font from css*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+}
+
+body {
+    margin: 0; /* quita márgenes por defecto */
+    padding: 0;
+    min-height: 100vh; /* altura mínima de toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 5, 5);
+}
+
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 99%; /* <<<< este cambio es importante */
+    height: auto; /* o puedes poner una altura fija si quieres */
+    padding: 7px;
+}
+
+
+#contato{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Space Mono", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBar{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+#buttonSearch{
+    background-color: rgb(51, 51, 51);
+    border-radius: 0 20px 20px 0;
+    border: none;
+}
+
+#search{
+    background-color: rgb(51, 51, 51);
+    border-radius: 20px 0 0 20px;
+    width: 10cm;
+    border: none;
+    padding: 10px;
+    outline: none;
+    box-shadow: none;
+    border: none; 
+    color: white;
+}
+
+#NavBar{
+    width: 15cm;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sections{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.sections:hover{
+text-decoration: underline;
+}
+/*aprecentação*/
+
+#sobreMim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    height: 800px;
+    gap: 20px;
+    background:  radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#name{
+    font-size: 35px;
+}
+
+#name,#info{
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    width:50%;
+    box-sizing: border-box;
+}
+
+
+#name{
+    margin-top: 3cm;
+}
+#InfoBox{
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 40px;
+    margin-top: 3cm;
+}
+
+.MyInfo{
+    width: 350px;
+    height: 350px;
+    background:radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    border-radius: 20px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyInfo:hover{
+    transform: scale(1.03);
+}
+
+.MyInfo:hover h3{
+    color: green;
+}
+
+.MyInfo p{
+    font-size: 15px;
+    text-align: justify;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#Py, #Script{
+    color: yellow;
+}
+
+#thon{
+    color: blue;
+}
+
+#Java{
+    color: orangered;
+}
+
+
+.MyInfo h3{
+    margin: 20px;
+    font-family: "Space Mono", serif;
+}
+#MyAcademy{
+    background:  radial-gradient( black,rgb(5, 5, 5)) ;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#MyAcademy h2, #Xp h2{
+    font-family: "Space Mono",serif;
+    background-color:rgb(20, 20, 20) ;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#MyAcademy h3{
+    font-family: "Space Mono",serif;
+    background-color:rgb(20, 20, 20) ;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.MyAcademyInfo, .proyects{
+    background-color: rgb(37, 37, 37);
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.infoText{
+    width: 90%;
+    margin-left: 3%;
+    padding: 5px;
+    border-left: 5px white solid;
+}
+
+.subliText{
+    background-color:rgb(20, 20, 20) ;
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.lenguage_title, .TitleProyect{
+    margin-left: 3%;
+}
+
+.Lenguagens{
+    font-family: "Space Mono", serif;
+    background-color: rgb(20, 20, 20);
+    color: green;
+}
+#perfil{
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.MyAcademyInfo ul .date {
+    transition: color 0.3s ease; /* o 3s si prefieres más lento */
+}
+
+.MyAcademyInfo ul li:hover .date {
+    color: green;
+}
+
+
+#Xp{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+}
+
+#Xp h3, h2{
+    color: white;
+    margin: 20px;
+    font-family: "Space Mono", serif;
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.DevLenguage{
+    width: calc(100% / 6);
+    height: 160px;
+    background-color: rgb(49, 49, 49);
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.DevLenguage:hover{
+    transform: scale(1.1);
+}
+
+.DevLenguage:hover .LenguageName{
+    color: green;
+}
+
+.DevLenguage img{
+    width: 70px;
+    height: 70px;
+}
+
+.LenguageName{
+    font-family: "Space Mono",serif;
+    color: white;
+}
+
+.contain{
+    width: 100%;
+}
+
+.proyects img{
+    align-items: center;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.proyects{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contain_Graphics div ul{
+    background-color: rgb(20, 20, 20);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contain_Graphics{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contain_Graphics div ul li:hover{
+    background-color: rgb(0, 68, 3);
+    color: green;
+    border-radius: 5px;
+}
+
+.subliText_proyects{
+    display: flex;
+    gap: 20px;
+}
+
+.subliText_proyects img{
+    background-color: rgb(20, 20, 20);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#box_contain_MyAcademy_1{
+    display: flex;
+    width: auto;
+    gap:40px;
+}
+
+
+#exemple{
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#console{
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    color: white;
+    resize: none;
+    font-size: 18px;
+    font-family: "Space Mono", serif;
+    position: relative;    
+    opacity: 0;
+    box-sizing: border-box;
+    white-space: pre-wrap; /* Mantiene los saltos de línea */
+    margin-bottom: 10px;
+}
+
+#Bottons_command{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+#Execute{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-family: "Space Mono",serif;
+    font-size: 20px;
+}
+
+
+#editor{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#codificador{
+    position:absolute;
+    background-color: transparent;
+    width: 80%;
+    height: 500px;
+    color: white;
+    white-space: pre-wrap; /* Mantiene los saltos de línea */
+    font-family: monospace;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.alert {
+    color: yellow;
+}
+
+.let, .if, .else{
+    color: rgb(60, 60, 250);
+}
+
+.green{
+    color: green;
+}
+
+.prompt{
+    color: rgb(36, 1, 77);
+}
+
+.parseInt{
+    color: rgb(141, 92, 0);
+}
+
+footer{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+footer hr{
+    width: 100%;
+}
+
+#superline{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    padding: 20px;
+}
+
+.InfoFooter h3{
+    color: green;
+    font-family: "Space Mono", serif;
+}
+
+.InfoFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    height: 250px;
+}
+
+.InfoFooter p{
+    width: 300px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input{
+    padding: 10px;
+}
+
+
+#redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 100px;
+}
+
+#exemple{
+    width: 80%;
+    gap: 20px;
+}
+
+#exemple .subliText{
+    padding: 20px;
+    font-family: sans-serif;
+    color: white;
+}

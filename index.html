@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
+    <title>Dev web (Anthony)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+<!--cabeçalho (indica as seções da pagina mostrando quem eu sou e que posso fazer)--------------------------------------------------->
+    <header>
+
+        <a href="#" id="contato">
+            <img src="icon.png" alt=""> <p>< Dev frontEnd ></p>
+        </a>
+        
+        <div id="searchBar">
+            <input type="search" name="" id="search" placeholder="pesquisar">
+            <button id="buttonSearch" onclick="buscar()"><img src="lupa.png" alt=""></button>
+        </div>
+        <nav id="NavBar">
+            <a href="#" class="sections">inicio</a>
+            <a href="#sobreMim" class="sections">sobre mim</a>
+            <a href="#MyAcademy" class="sections">Formação academica</a>
+            <a href="#Xp" class="sections">Meu trabalho</a>
+            <a href="#" class="sections">Demostrações</a>
+        </nav>
+    </header>
+<!--aprecentação--------------------------------------------------------------------------------------------------------------------->
+<section id="sobreMim">
+    <h1 id="name">Anthony Gabriel Villegas Garcias</h1>
+    <p id="info">
+        Sou desenvolvedor front-end em formação, com foco em HTML, CSS e princípios de design web. Tenho experiência 
+        em projetos acadêmicos e pessoais, onde aplico minhas habilidades para criar páginas modernas, funcionais e 
+        visualmente agradáveis.
+    </p>
+    <!-- divs com mi foto e informaciones-->
+     <div id="InfoBox">
+        <div class="MyInfo">
+            <h3>< Quem sou ></h3>
+
+            <p>
+                Meu nome é Anthony, tenho 17 anos e sou natural da Venezuela. Aos 10 anos, me mudei para o Brasil devido às 
+                dificuldades econômicas em meu país. Durante os anos em que estive no Brasil, foquei nos meus estudos e desenvolvi 
+                uma grande curiosidade pela programação e pela criação de jogos. 
+            </p>
+        </div>
+        <div class="MyInfo">
+            <h3>< Paixão Pela Programação ></h3>
+            <p>
+                Desde pequeno, sempre me fascinou a ideia de criar 
+                meus próprios videogames, o que despertou em mim a paixão pela programação. Essa paixão me levou a seguir uma carreira 
+                na área de tecnologia, com o objetivo de me tornar programador profissional. Meu sonho é crescer profissionalmente até 
+                alcançar o nível de senior em uma empresa de desenvolvimento de software, contribuindo com minhas habilidades e 
+                aprendendo continuamente para melhorar.
+            </p>
+        </div>
+        <div class="MyInfo">
+            <h3>< Lenguagens favoritas ></h3>
+
+            <p>Meus linguagens de programação favoritos até o momento são <span id="Py">Py</span><span id="thon">thon</span> e <span id="Java">Java</span><span id="Script">Script</span>, 
+                tanto pela facilidade de uso quanto pela
+                 sintaxe e pela variedade de possibilidades que oferecem. Desde que conheci essas linguagens, meu interesse por elas 
+                 aumentou a tal ponto que criei um pequeno projeto em Python: um jogo simples, mas muito complexo de programar. 
+                 Felizmente, não demorei muito tempo para desenvolvê-lo e, com o passar do tempo, aprendi muito com meus erros e 
+                 melhorei minhas estratégias.
+            </p>
+        </div>
+     </div>
+</section>
+<!--Meus estudos--------------------------------------------------------------------------------------------------------------------->
+<section id="MyAcademy">
+    <h2> < Meus Estudos ></h2>
+    <div id="box_contain_MyAcademy_1">
+        <div class="MyAcademyInfo">
+            <h3> < Formação > </h3>
+            <br>
+            <div class="subliText">
+                <h4>Ensino Fundamental</h4>
+                <p>2007 - 2022</p>
+            </div>
+            <br>
+            <ul>
+                <li>Unidad Educativa Bachiller Alberto Sanabria – Sucre, Cumaná (Venezuela)
+                    <p class="date">2007 – 2019</p>
+                </li>
+    
+                <li>Escola Municipal de Educação Básica Santo André – Capivari de Baixo, SC
+                    <p class="date">2020 – 2021</p>
+                </li>
+    
+                <li>Escola Municipal de Educação Básica Célia Coelho Cruz (C.C.C.) – Tubarão, SC
+                    <p class="date">Concluído em 2022</p>
+                </li>
+            </ul>
+            <br>
+            <div class="subliText">
+                <h4>Ensino Médio Técnico (Em andamento)</h4>
+                <p>2023 – 2025</p>
+            </div>
+            <br>
+            <p class="infoText">
+                Cursando o técnico em desenvolvimento front-end, com foco na construção de páginas web utilizando HTML, CSS e PHP. 
+                Participação em feiras de ciências e projetos particulares. Atualmente também realizando cursos complementares de 
+                JavaScript (manipulação do DOM) e introdução ao Python. Possuo grande interesse em tecnologias e utilizo ferramentas 
+                como inteligência artificial para aprofundar meu aprendizado e melhorar a estética dos meus projetos web.
+            </p>
+        </div>
+    
+        <div class="MyAcademyInfo">
+            <h3> < Cursos Estudados > </h3>
+            <br>
+            <div class="subliText">
+                <h4>Desenvolvedor Front-End</h4>
+                <p>CEDUP Diomício Freitas – Tubarão, Brasil</p>
+                <p>2023 - 2025</p>
+            </div>
+            <br>
+            <p class="infoText">
+                Atualmente curso a formação técnica em desenvolvimento front-end e back-end, com foco na construção de páginas web utilizando 
+                principalmente HTML, CSS e PHP, sem o uso de JavaScript no momento. Durante minha formação, participei de feiras de ciências e 
+                projetos privados, sempre buscando aplicar os conhecimentos adquiridos na prática. Procuro manter uma postura curiosa 
+                e proativa em relação à programação, explorando novas ferramentas e soluções para aprimorar minhas habilidades. 
+                Também aprendi a utilizar inteligências artificiais como apoio, por exemplo, para entender melhor certos atributos do 
+                CSS ou tornar o visual das minhas páginas mais atrativo.
+            </p>
+            <br>
+            <p class="infoText">
+                Além do curso técnico, estou atualmente realizando um curso complementar de JavaScript com foco na manipulação do DOM, 
+                bem como um curso de introdução à linguagem Python. Também aprendi a utilizar inteligências artificiais como apoio, por 
+                exemplo, para entender melhor certos atributos do CSS ou tornar o visual das minhas páginas mais atrativo.
+            </p>
+        </div>    
+    </div>
+    
+    <div class="MyAcademyInfo">
+        <h3>< Especialização ></h3>
+        <br>
+        <div class="subliText">
+            Minha especialidade está focada no desenvolvimento front-end, com ênfase em HTML e CSS. Tenho um grande apreço pela 
+            sintaxe clara e pela facilidade de compreensão que essas linguagens oferecem, permitindo a construção de estruturas 
+            e estilos de forma organizada e eficiente. Gosto de explorar as diversas possibilidades criativas que essas ferramentas 
+            fundamentais proporcionam na web. Através delas, posso transformar ideias em interfaces visuais, acessíveis e atrativas, 
+            desenvolvendo páginas que equilibram estética e funcionalidade. Atualmente, estou estudando JavaScript, o que tem ampliado 
+            minha visão sobre o desenvolvimento web. Com esse conhecimento, pretendo futuramente atuar também na área de back-end,
+            utilizando tecnologias que me permitam construir aplicações completas e dinâmicas. Meu objetivo é me tornar um desenvolvedor 
+            full stack, capaz de trabalhar com eficiência tanto no front-end quanto no back-end, oferecendo soluções completas e bem 
+            estruturadas.
+        </div>
+        <br>
+        <div class="subliText">
+            <h4>Idiomas</h4>
+        </div>
+        <br>
+        <h4 class="lenguage_title">Espanhol <span class="Lenguagens">< nativo ></span> :</h4>
+        <p class="infoText">
+            O espanhol é minha língua materna, portanto sou fluente no seu uso tanto na conversação quanto na escrita. 
+            Sinto-me totalmente à vontade para me comunicar nesse idioma.
+        </p>
+        <br>
+        <h4 class="lenguage_title">Português <span class="Lenguagens">< avançado ></span> :</h4>
+        <p class="infoText">
+            Atualmente moro no Brasil, por isso tenho um bom domínio do português. Embora meu nível de fluência não seja 
+            nativo, consigo me comunicar com facilidade tanto em conversas cotidianas quanto em ambientes mais formais.
+        </p>
+        <br>
+        <h4 class="lenguage_title">Inglês <span class="Lenguagens">< basico ></span> :</h4>
+        <p class="infoText">
+            Embora eu não tenha uma especialização em inglês, possuo uma compreensão básica do idioma, especialmente ao ler textos.
+             No entanto, me sinto menos seguro ao falar ou escrever, pois não tenho muita prática nessas áreas.
+        </p>
+    </div>
+</section>
+<!--experiencia---------------------------------------------------------------------------------------------------------------------->
+<section id="Xp">
+    <h2>< Meu trabalho ></h2>
+    <h3>linguagens ja usadas</h3>
+    <div class="list">
+        <div class="DevLenguage">
+            <h4 class="LenguageName">< Python ></h4>
+            <img src="python.png" alt="">
+        </div>
+        <div class="DevLenguage">
+            <h4 class="LenguageName">< JavaScript ></h4>
+            <img src="js.png" alt="">
+        </div>
+        <div class="DevLenguage">
+            <h4 class="LenguageName">< HTML ></h4>
+            <img src="html-5.png" alt="">
+        </div>
+        <div class="DevLenguage">
+            <h4 class="LenguageName">< CSS ></h4>
+            <img src="css-3.png" alt="">
+        </div>
+        <div class="DevLenguage">
+            <h4 class="LenguageName">< LUA ></h4>
+            <img src="lua.png" alt="">
+        </div>
+        <div class="DevLenguage">
+            <h4 class="LenguageName">< PHP ></h4>
+            <img src="php.png" alt="">
+        </div>
+    </div>
+
+    <div class="proyects">
+        <div class="contain">
+            <h3>TERRA PLAINT</h3>
+        </div>
+        <div class="subliText_proyects">
+            <div class="subliText">
+                <p>
+                 Criei <strong>Terra Plaint</strong>, um jogo de sobrevivência em 2D onde o jogador explora um mundo gerado aleatoriamente cheio de cavernas, 
+                 minérios, árvores e lava. O jogador pode se mover, pular, quebrar e colocar blocos, gerenciar seu inventário e sobreviver a 
+                 perigos como o dano por queda.
+                 Também implementei uma barra de acesso rápido para selecionar itens, um inventário interno, e sistemas para mostrar coordenadas, 
+                 FPS e alternar entre tela cheia e janela. O objetivo é explorar, coletar recursos, construir estruturas e sobreviver em um mundo 
+                 desafiador.
+                </p>
+             </div>
+
+             <img src="python.png" alt="">
+        </div>
+        <br>
+        <div class="contain_Graphics">
+            <div>
+                <h3>Carateristicas</h3>
+                <ul>
+                    <li>Mundo gerado aleatoriamente</li>
+                    <li>Geração de cavernas, árvores, minérios e lava</li>
+                    <li>Sistema de blocos (air, grass, dirt, stone, gold, iron, prata, diamond)</li>
+                    <li>Jogador controlável (andar para os lados e pular)</li>
+                    <li>Gravidade realista</li>
+                    <li>Dano por queda (se cair de muito alto, perde vida)</li>
+                    <li>Sistema de vida do jogador (barra de vida visível)</li>
+                    <li>Sistema de inventário (abrir/fechar com tecla "E")</li>
+                    <li>Barra de acesso rápido (slots 1 a 9 para selecionar itens)</li>
+                    <li>Colocar blocos (clicando com o botão direito do mouse)</li>
+                    <li>Quebrar blocos (clicando com o botão esquerdo do mouse)</li>
+                    <li>Destaque do bloco que o mouse está apontando</li>
+                    <li>Salvar o item na barra rápida (tecla "G")</li>
+                    <li>Exibir FPS e coordenadas (ativar/desativar com F1)</li>
+                    <li>Trocar para tela cheia (pressionando F11)</li>
+                    <li>Sistema de câmera (o mundo se move baseado na posição do jogador)</li>
+                    <li>Sistema de morte (verifica se a vida chegou a 0)</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>Grafico</h3>
+                <img src="Terra Plaint.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!--exemplos------------------------------------------------------------------------------------------------------------------------->
+<section id="exemple">
+    <h2>< Demostração ></h2>
+
+    <div class="subliText">
+        Este é um editor de código básico, desenvolvido com <span id="Java">Java</span><span id="Script">Script</span>. 
+        Embora ainda não seja muito prático, ele detecta 100% do código escrito nesta <code>div</code>. Ao digitar, 
+        o conteúdo é interpretado pela função <code>execute()</code>, que utiliza <code>eval()</code> internamente
+         para executar o código.
+    </div>
+    <div id="editor">
+        <div id="codificador" ></div>
+        <textarea name="console" id="console" placeholder='alert("hellow world")'></textarea>
+    </div>
+    <div id="Bottons_command">
+        <button onclick="execute()" id="Execute">Execute</button>
+    </div>
+</section>
+
+<!--rodapé--------------------------------------------------------------------------------------------------------------------------->
+<footer>
+    <div id="superline">
+        <div class="InfoFooter">
+
+            <h3>comentario</h3>
+            <p>Agradeço pela atenção dedicada e por ter lido esta página até o final.</p>
+
+            <h3>Meu contato</h3>
+            <p>(48) 99912-4006</p>
+            <p>robtobgamer12@gmail.com</p>
+        </div>
+        <div class="InfoFooter">
+            <h3>menu</h3>
+            <a href="#sobreMim" class="sections">inicio</a>
+            <a href="#sobreMim" class="sections">sobre mim</a>
+            <a href="#MyAcademy" class="sections">Formação academica</a>
+            <a href="#Xp" class="sections">Meu trabalho</a>
+            <a href="#exemple" class="sections">Demostrações</a>
+        </div>
+        <div class="InfoFooter">
+            <h3>Coloque sua marca</h3>
+            <form action="">
+                <input type="text" name="marca" id="" placeholder="seu nome">
+                <input type="submit" value="enviar marca">
+            </form>
+            
+        </div>
+    </div>
+
+    <hr>
+    <div id="redes">
+        <h2>&copy;Todos Os direitos reservados para RobtobGamer12&trade;</h2>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
