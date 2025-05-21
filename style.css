@@ -122,7 +122,7 @@ text-decoration: underline;
 }
 
 .MyInfo{
-    width: 350px;
+    width: auto;
     height: 350px;
     background:radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     border-radius: 20px;
